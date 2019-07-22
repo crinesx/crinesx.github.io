@@ -1,0 +1,98 @@
+/*clase tool para seccion de lenguajes, clase tool2 para seccion de accordion*/
+@media screen and (min-width : 641px) {
+
+    .navmov{
+        display: none;
+    }
+    .offc{
+        display: none;
+    }
+
+}
+@media screen and (min-width: 1000px) {
+    .tool4{
+        width: 96px;
+        height: 96px;
+    }
+
+}
+@media screen and (max-width: 640px) {
+
+    .navdesk{
+        display: none;
+    }
+
+    .desk{
+        display: none;
+    }
+    .celu{
+        overflow: hidden;
+    }
+
+    .textsize p, dt, dd, li{
+        font-size: 14px;
+    }
+    .calltop{
+        margin-bottom: 500px;
+    }
+    .accormar{
+        margin-bottom: 50px;
+    }
+
+}
+@media screen and (max-width: 650px) {
+
+    .tool2{
+        width: 45px;
+        height: 45px;
+    }
+}
+@media screen and (max-width: 700px){
+    /*seccion del perfil media-object*/
+    .mediamar{
+        margin-left: 10px;
+    }
+    .mediamar2{
+        margin-left: 5px;
+    }
+    .tool3{
+        width: 35px;
+        height: 35px;
+    }
+    .tool4{
+        width: 35px;
+        height: 35px;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    .tool{
+        width: 64px;
+        height: 64px;
+    }
+    .tool2{
+        width: 60px;
+        height: 60px;
+    }
+    .mediamar2{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .perfil{
+        width: 250px;
+        height: 250px;
+    }
+    .mediamar{
+        margin-left: 70px;
+    }
+}
+@media screen and (max-width: 1000px){
+
+    .tool3{
+        width: 60px;
+        height: 60px;
+    }
+}

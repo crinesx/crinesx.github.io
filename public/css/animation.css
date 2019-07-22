@@ -1,0 +1,47 @@
+
+.letras{
+    position: relative;
+    animation-name: mover;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+}
+.letras2{
+    position: relative;
+    animation-name: mover;
+    animation-duration: 25s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+}
+
+.letras3{
+    position: relative;
+    animation-name: mover;
+    animation-duration: 25s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+}
+.letras4{
+    position: relative;
+    animation-name: mover;
+    animation-duration: 25s;
+    animation-delay: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes mover {
+    0%{visibility: hidden; right: -8000px; font-style: italic; transform: rotateY(160deg)}
+    15%{visibility: visible; right: 0px;transform: rotateY(160deg)}
+    20%{ transform: rotateY(0deg);}
+    25%{font-style: normal}
+    75%{}
+    100%{}
+}
