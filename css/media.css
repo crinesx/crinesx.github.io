@@ -1,5 +1,17 @@
 /*clase tool para seccion de lenguajes, clase tool2 para seccion de accordion*/
+@media screen and (max-width:640){
+   
+}
 @media screen and (min-width : 641px) {
+    .logonav2{
+        display: none;
+    }
+     .logonav{
+        display: block;
+    }
+}
+
+@media screen and (min-width : 741px) {
 
     .navmov{
         display: none;
@@ -16,7 +28,7 @@
     }
 
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 740px) {
 
     .navdesk{
         display: none;
@@ -38,6 +50,7 @@
     .accormar{
         margin-bottom: 50px;
     }
+  
 
 }
 @media screen and (max-width: 650px) {
