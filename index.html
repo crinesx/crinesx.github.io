@@ -1,60 +1,439 @@
-<?php
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-/**
- * Laravel - A PHP Framework For Web Artisans
- *
- * @package  Laravel
- * @author   Taylor Otwell <taylor@laravel.com>
- */
+        <title>Blog Project</title>
 
-define('LARAVEL_START', microtime(true));
+        <!-- Styles -->
+          <link rel="stylesheet" href="foundation-6.5.1-complete/css/foundation.css">
+    <link rel="stylesheet" href="foundation-6.5.1-complete/css/app.css">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/media.css" rel="stylesheet">
+        <link href="css/animation.css" rel="stylesheet">
+        <link href="font/fontawesome/css/all.cs" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+    </head>
+   
+<!--seccion de off-canvas_________________-->
+<div class="off-canvas position-right offc" style="background-color: #0a0a0a" id="offCanvas" data-off-canvas>
+    <!-- Your menu or Off-canvas content goes here -->
 
-/*
-|--------------------------------------------------------------------------
-| Register The Auto Loader
-|--------------------------------------------------------------------------
-|
-| Composer provides a convenient, automatically generated class loader for
-| our application. We just need to utilize it! We'll simply require it
-| into the script here so that we don't have to worry about manual
-| loading any of our classes later on. It feels great to relax.
-|
-*/
+    <ul class="menu vertical" data-magellan>
+        <li class="centrar"><a class="texto" href="/about"><i class="fas fa-user-tie"></i><br>about</a></li>
+        <li class="centrar"><a class="texto" href="/experience"><i class="far fa-folder-open"></i><br>experience</a></li>
+        <li class="centrar"><a class="texto" href="/skill"><i class="fas fa-cogs"></i><br>skill</a></li>
+        <li class="centrar"><a class="texto" href="/contact"><i class="fas fa-map-marker-alt"></i><br>contact</a></li>
+    </ul>
 
-require __DIR__.'/vendor/autoload.php';
+</div>
 
-/*
-|--------------------------------------------------------------------------
-| Turn On The Lights
-|--------------------------------------------------------------------------
-|
-| We need to illuminate PHP development, so let us turn on the lights.
-| This bootstraps the framework and gets it ready for use, then it
-| will load up this application so that we can run it and send
-| the responses back to the browser and delight our users.
-|
-*/
 
-$app = require_once __DIR__.'/bootstrap/app.php';
 
-/*
-|--------------------------------------------------------------------------
-| Run The Application
-|--------------------------------------------------------------------------
-|
-| Once we have the application, we can handle the incoming request
-| through the kernel, and send the associated response back to
-| the client's browser allowing them to enjoy the creative
-| and wonderful application we have prepared for them.
-|
-*/
+<!--seccion de menu movil_______________________________________-->
 
-$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+            <div class="top-bar navmov " data-sticky-on="small" data-sticky data-margin-top="0">
 
-$response = $kernel->handle(
-    $request = Illuminate\Http\Request::capture()
-);
+                <div class="top-bar-right">
+                    <div class="title-bar-title"><i class="fab fa-gitlab"></i></div>
+                    <button class="menu-icon float-right" type="button" data-toggle="offCanvas" ></button>
 
-$response->send();
+                </div>
 
-$kernel->terminate($request, $response);
+            </div>
+
+
+
+<!--seccion top-bar _________________________________-->
+            <div class="top-bar desk docs-sticky-top-bar"  data-sticky data-margin-top="0">
+                <div class="top-bar-left">
+                    <ul class="vertical horizontal-medium menu">
+                        <li class="menu-text"><i class="fab fa-gitlab"></i></li>
+                    </ul>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="medium-horizontal menu"  data-dropdown-menu>
+                        <li><a class="texto" href="index.html/#about">about</a></li>
+                        <li><a class="texto" href="index.html/#experience">experience</a></li>
+                        <li><a class="texto" href="index.html/#skill">skill</a></li>
+                        <li><a class="texto" href="index.html/#contact">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+    <body class="celu">
+    
+    <div class="offc">
+        <div class=" align-top text-center">
+
+    <div class="fondo2">
+        <hr>
+        <h4>About</h4>
+        <hr>
+        <hr>
+    </div>
+</div>
+<div class="grid-padding-x " data-equalizer data-equalize-by-row="true">
+    <div class="cell small-8" data-equalizer-watch>
+        <div class="media-object align-center">
+            <div class="media-object-section" >
+                <img class="perfil desk" src="img/ava3-3.jpg">
+            </div>
+            <div class="media-object-section main-section">
+                <div class="row offc">
+                    <div class="column centrar">
+                        <img class="perfil2" src="img/ava3-3.jpg">
+                    </div>
+                </div>
+                <div class="row offc">
+                    <div class="column centrar">
+                        <h3 >Welcome</h3>
+                    </div>
+                </div>
+
+                <div style="overflow:hidden">
+                    <dl>
+                        <dd class="letras">Hi, I'm Mauricio Rodríguez. I'm an engineer in computer science.</dd>
+                        <dd></dd>
+                        <dd class="letras2">I like to program and develop web applications, I have great interest and curiosity to learn new languages,
+                            frameworks and tools for work.</dd>
+                        <dd class="letras3">I’m exploring the framework of angularJS and .NET right now. The spring framework and the kotlin language of android are pending.</dd>
+                        <dd class="letras4">Lately working on window 10 operating system but sometimes I use linux</dd>
+
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+       
+       
+       
+        <div class="column textsize desk">
+
+            <section >
+                <div class="grid-y medium-grid-frame">
+                    
+<div class=" align-top text-center">
+
+    <div class="fondo2">
+        <hr>
+        <h4 class="animated infinite zoomIn slower">About</h4>
+        <hr>
+        <hr>
+    </div>
+</div>
+<div class="grid-padding-x " data-equalizer data-equalize-by-row="true">
+    <div class="cell small-8" data-equalizer-watch>
+        <div class="media-object align-center mediamar">
+            <div class="media-object-section" >
+                <img class="perfil" src="img/ava3-3.jpg">
+            </div>
+            <div class="media-object-section main-section mediamar2">
+                <h3>Welcome</h3>
+                <div style="overflow:hidden">
+                    <dl>
+                        <dd class="letras">Hi, I'm Mauricio Rodríguez. I'm an engineer in computer science.</dd>
+                        <dd></dd>
+                        <dd class="letras2">I like to program and develop web applications, I have great interest and curiosity to learn new languages,
+                            frameworks and tools for work.</dd>
+                        <dd class="letras3">I’m exploring the framework of angularJS and .NET right now. The spring framework and the kotlin language of android are pending.</dd>
+                        <dd class="letras4">Lately working on window 10 operating system but sometimes I use linux</dd>
+
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </section>
+
+
+
+            <section id="experience" data-magellan-target="experience" >
+                <div class="grid-y medium-grid-frame seccionpad">
+                    <div class=" align-top text-center">
+
+    <div class="fondo2">
+        <hr>
+        <h4>Experience and Education</h4>
+        <hr>
+        <hr>
+    </div>
+</div>
+<div class="grid-x grid-padding-x medium-up-2 large-up-2">
+    <div class="cell offc">
+        <ul class="tabs" data-tabs id="example-tabs">
+            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Education</a></li>
+            <li class="tabs-title"><a href="#panel2">Experience</a></li>
+        </ul>
+        <div class="tabs-content" data-tabs-content="example-tabs">
+            <div class="tabs-panel is-active" id="panel1">
+                <dl>
+                    <dt>University</dt>
+                    <p>Benemerita Universidad Autonoma de Puebla</p>
+                    <dt>Faculty of Computer Science</dt>
+                    <p>Computer Science Engineering - <a data-toggle="ceneval">degree in process</a> </p>
+                    <div class="dropdown-pane" data-position="top" data-alignment="center"  id="ceneval" data-dropdown>
+                        <img style="width: 100%; height: 80%;" src="img/ceneval.jpg">
+                    </div>
+                    <dt>Courses</dt>
+                    <ul>
+                        <li>Maintenance of the computers</li>
+                        <li>Game Modeling and Animation at Unity(basic)</li>
+                        <li>Design of android applications(basic)</li>
+                    </ul>
+                    <a href="https://www.buap.mx/" ><img class="logos2" src="img/buap.png"></a>
+                    <a href="https://www.cs.buap.mx/"><img class="logos2" src="img/fcc.png"></a>
+                </dl>
+            </div>
+            <div class="tabs-panel" id="panel2">
+                <dl>
+                    <dt>Professional Practices and Social Service</dt>
+                    <dd>CEO Consulting Group or Genios business Consulting</dd>
+                    <p>
+                    <ul>
+                        <li>Web developer</li>
+                        <li>network administrator</li>
+                    </ul>
+                    </p>
+
+                    <br>
+                    <a href="http://ceoconsulting.com.mx/" ><img class="logos" src="img/CEO.png"></a>
+                    <a href="http://genios.com.mx/"><img class="logos" src="img/genios.png"></a>
+                </dl>
+            </div>
+        </div>
+    </div>
+    {{-- seccion 2 para escritorio --}}
+    <div class="cell small-8 desk">
+        <dl>
+            <dt>University</dt>
+            <p>Benemerita Universidad Autonoma de Puebla</p>
+            <dt>Faculty of Computer Science</dt>
+            <p>Computer Science Engineering - <a data-toggle="ceneval">degree in process</a> </p>
+            <div class="dropdown-pane" data-position="top" data-alignment="center"  id="ceneval" data-dropdown>
+                <img style="width: 100%; height: 50%;" src="img/ceneval-2.jpg">
+            </div>
+            <dt>Courses</dt>
+            <ul>
+                <li>Maintenance of the computers</li>
+                <li>Game Modeling and Animation at Unity(basic)</li>
+                <li>Design of android applications(basic)</li>
+            </ul>
+            <a href="https://www.buap.mx/" ><img class="logos2" src="img/buap.png"></a>
+            <a href="https://www.cs.buap.mx/"><img class="logos2" src="img/fcc.png"></a>
+        </dl>
+    </div>
+    <div class="cell small-4 desk">
+        <dl>
+            <dt>Professional Practices and Social Service</dt>
+            <dd>CEO Consulting Group or Genios business Consulting</dd>
+            <p>
+            <ul>
+                <li>Web developer</li>
+                <li>network administrator</li>
+            </ul>
+            </p>
+
+            <br>
+            <a href="http://ceoconsulting.com.mx/" ><img class="logos" src="img/CEO.png"></a>
+            <a href="http://genios.com.mx/"><img class="logos" src="img/genios.png"></a>
+        </dl>
+    </div>
+</div>
+                </div>
+            </section>
+
+
+
+            <section  id="skill" data-magellan-target="skill">
+                <div class="grid-y medium-grid-frame seccionpad">
+                    <div class=" align-top text-center">
+    <div class="fondo2">
+        <hr>
+        <h4>Programming Languages & Tools</h4>
+        <hr>
+        <hr>
+    </div>
+</div>
+
+<div class="grid-x grid-padding-x" data-equalizer data-equalize-on="medium" id="test-eq">
+    <div class="cell auto desk">
+        <div class="callout bord" data-equalizer-watch>
+            <div class="top-bar">
+                <div class="title-bar-title">Languajes and <abbr title="Operating System">S.O</abbr></div>
+            </div>
+            <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="LINUX">
+                                                <img class="tool" src= "img-logos/linux.png"></span>
+            <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="WINDOWS 10">
+                                            lass="tool" src= "img-logos/windows8.png"></span>
+            <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="HTML 5">
+                                                <img class="tool" src= "img-logos/html-5.png"></span>
+            <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="PHP">
+                                                <img class="tool" src= "img-logos/php-logo.png"></span>
+            <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="CSS">
+                                                <img class="tool" src= "img-logos/css3.png"></span>
+            <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="JAVASCRIPT">
+                                                <img class="tool" src= "img-logos/javascript-filled.png"></span>
+            <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="SQL">
+                                                <img class="tool" src= "img-logos/sql.png"></span>
+            <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="C++">
+                                                <img class="tool" src= "img-logos/c-plus-plus-logo.png"></span>
+            <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="C">
+                                                 <img class="tool" src= "img-logos/c-programming.png"></span>
+        </div>
+    </div>
+    <div class="cell auto">
+        <div class="callout bord accormar" data-equalizer-watch>
+            <div class="row">
+                <div class="columns">
+                    <ul class="accordion" data-responsive-accordion-tabs="accordion medium-tabs large-accordion"  data-allow-all-closed="true">
+                        <li class="accordion-item is-active" data-accordion-item>
+                            <a href="#" class="accordion-title">Frameworks PHP</a>
+                            <div class="accordion-content" data-tab-content >
+                                <div data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="CodeIgniter">
+                                    <img class="tool2" src= "img-logos/codeigniter.png"></div>
+                                <div data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Laravel">
+                                    <img class="tool2" src= "img-logos/laravel.png"></div>
+                            </div>
+                        </li>
+                        <li class="accordion-item" data-accordion-item>
+                            <a href="#" class="accordion-title">Framework CSS</a>
+                            <div class="accordion-content" data-tab-content>
+                                                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Bootstrap">
+                                                                        <img class="tool2 tool3" src= "img-logos/bootstrap.png"></span>
+                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Foundation Zurb">
+                                                                        <img class="tool2 tool3" src= "img-logos/foundation.png"></span>
+                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Bulma">
+                                                                        <img class="tool2 tool4" src= "img-logos/bulma.png"></span>
+                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Materialize">
+                                                                        <img class="tool2 tool4" src= "img-logos/materialize1.png"></span>
+                            </div>
+                        </li>
+                        <li class="accordion-item" data-accordion-item>
+                            <a href="#" class="accordion-title">Framework JS and Development Environments </a>
+                            <div class="accordion-content" data-tab-content>
+                                                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Android Studio">
+                                                                        <img class="tool2" src= "img-logos/android.png"></span>
+                                <span data-tooltip aria-haspopup="true" class="has-disable-hover="false" tabindex="1" title="Visual Studio">
+                                                                        <img class="tool2" src= "img-logos/visual-studio.png"></span>
+                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="AngularJS">
+                                                                        <img class="tool2" src= "img-logos/angularjs.png"></span>
+                            </div>
+                        </li>
+                        <li class="accordion-item" data-accordion-item>
+                            <a href="#" class="accordion-title"><abbr title="Version Control System">VCS</abbr> and Tools </a>
+                            <div class="accordion-content" data-tab-content>
+                                                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Git">
+                                                                        <img class="tool2" src= "img-logos/Git.png"></span>
+                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Gitlab">
+                                                                        <img class="tool2" src= "img-logos/Gitlab.png"></span>
+                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Github">
+                                                                        <img class="tool2" src= "img-logos/Github.png"></span>
+                            </div>
+                        </li>
+                        <!-- accordion extra para celular -->
+                        <li class="accordion-item offc" data-accordion-item>
+                            <a href="#" class="accordion-title">Languajes and <abbr title="Operating System">S.O</abbr></a>
+                            <div class="accordion-content" data-tab-content >
+                                                                    <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="LINUX">
+                                                <img class="tool2" src= "img-logos/linux.png"></span>
+                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="WINDOWS 10">
+                                                <img class="tool2" src= "img-logos/windows8.png"></span>
+                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="HTML 5">
+                                                <img class="tool2" src= "img-logos/html-5.png"></span>
+                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="PHP">
+                                                <img class="tool2" src= "img-logos/php-logo.png"></span>
+                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="CSS">
+                                                <img class="tool2" src= "img-logos/css3.png"></span>
+                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="JAVASCRIPT">
+                                                <img class="tool2" src= "img-logos/javascript-filled.png"></span>
+                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="SQL">
+                                                <img class="tool2" src= "img-logos/sql.png"></span>
+                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="C++">
+                                                <img class="tool2" src= "img-logos/c-plus-plus-logo.png"></span>
+                                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="C">
+                                                 <img class="tool2" src= "img-logos/c-programming.png"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </section>
+
+
+
+            <section id="contact" data-magellan-target="contact">
+                <div class="grid-y medium-grid-frame seccionpad">
+                    <div class=" align-top text-center">
+    <div class="fondo2">
+        <hr>
+        <h4>Contact</h4>
+        <hr>
+        <hr>
+    </div>
+</div>
+<div class="grid-x grid-padding-x">
+    <div class="cell auto">
+        <div class="callout calltop">
+            <table class=" hover">
+                <tbody>
+                <tr><td><i class="fas fa-user-tie fa-1x fa-pull-left"></i>Mauricio Arturo Rodríguez Rosas</td></tr>
+                <tr><td><i class="fas fa-map-marker-alt"></i>México, Puebla </td></tr>
+                <tr><td><i class="fas fa-mobile-alt"></i>(+52)22-21-15-91-76</td></tr>
+                <tr><td><i class="fas fa-at"></i>mauricio.a_rosas@hotmail.com </td></tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="https://www.facebook.com/crines.fear"><i class="fab fa-facebook fa-3x"></i></a>
+                <a href="https://github.com/crinesx"><i class="fab fa-github fa-3x"></i></a>
+                <a href="https://gitlab.com/crines"><i class="fab fa-gitlab fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/mauricio-rosas-b97033161/"><i class="fab fa-linkedin fa-3x"></i></a>
+            </div>
+        </div>
+    </d
+                </div>
+            </section>
+
+
+        </div>
+    <a class="fix" data-toggle="cont"><i class="fas fa-plus-circle fa-3x"></i></a>
+                <div class="dropdown-pane" data-position="top" data-alignment="right" id="cont" data-dropdown>
+                    <div class="title-bar-title">Contact</div>
+                    <table class=" hover">
+                        <tbody>
+                        <tr>
+                            <td><i class="fas fa-user-tie fa-1x fa-pull-left"></i>Mauricio Arturo Rodríguez Rosas</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-mobile-alt"></i>(+52)22-21-15-91-76</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-at"></i>mauricio.a_rosas@hotmail.com </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+        </body>
+        <!-- Scripts -->
+        <script src="foundation-6.5.1-complete/js/vendor/jquery.js"></script>
+    <script src="foundation-6.5.1-complete/js/vendor/what-input.js"></script>
+    <script src="foundation-6.5.1-complete/js/vendor/foundation.js"></script>
+    <script src="foundation-6.5.1-complete/js/app.js"></script>
+    <script src="foundation-6.5.1-complete/font/fontawesome/js/all.js"></script>
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+       -->     <script>
+                $(document).foundation();
+            </script>
+</html>
+
