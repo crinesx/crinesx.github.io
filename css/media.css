@@ -1,7 +1,5 @@
 /*clase tool para seccion de lenguajes, clase tool2 para seccion de accordion*/
-@media screen and (max-width:640){
-   
-}
+
 @media screen and (min-width : 641px) {
     .logonav2{
         display: none;
@@ -50,7 +48,9 @@
     .accormar{
         margin-bottom: 50px;
     }
-  
+    .fix{
+        position: absolute;
+    }
 
 }
 @media screen and (max-width: 650px) {
