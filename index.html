@@ -22,6 +22,7 @@
     <!-- Your menu or Off-canvas content goes here -->
 
     <ul class="menu vertical" data-magellan>
+        <li>home</li>
         <li class="centrar"><a class="texto" href="about.html"><i class="fas fa-user-tie"></i><br>about</a></li>
         <li class="centrar"><a class="texto" href="experience.html"><i class="far fa-folder-open"></i><br>experience</a></li>
         <li class="centrar"><a class="texto" href="skill.html"><i class="fas fa-cogs"></i><br>skill</a></li>
@@ -34,20 +35,22 @@
 
 <!--seccion de menu movil_______________________________________-->
 
-            <div class="top-bar navmov " data-sticky-on="small" data-sticky data-margin-top="0">
+    <div class="top-bar navmov " data-sticky-on="small" data-sticky data-margin-top="0">
+        <div class="top-bar-left logonav">
+            <div class="title-bar-title"><i class="fab fa-gitlab"></i>About</div>
+        </div>
+        <div class="top-bar-right">
+            <div class="title-bar-title logonav2"><i class="fab fa-gitlab"></i>About</div>
+            <button class="menu-icon float-right" type="button" data-toggle="offCanvas" ></button>
 
-                <div class="top-bar-right">
-                    <div class="title-bar-title"><i class="fab fa-gitlab"></i></div>
-                    <button class="menu-icon float-right" type="button" data-toggle="offCanvas" ></button>
+        </div>
 
-                </div>
-
-            </div>
+    </div>
 
 
 
 <!--seccion top-bar _________________________________-->
-            <div class="top-bar desk docs-sticky-top-bar"  data-sticky data-margin-top="0">
+            <div class="top-bar desk docs-sticky-top-bar navfix"  data-sticky data-margin-top="0">
                 <div class="top-bar-left">
                     <ul class="vertical horizontal-medium menu">
                         <li class="menu-text"><i class="fab fa-gitlab"></i></li>
@@ -67,46 +70,46 @@
     <div class="offc">
         <div class=" align-top text-center">
 
-    <div class="fondo2">
-        <hr>
-        <h4>About</h4>
-        <hr>
-        <hr>
-    </div>
-</div>
-<div class="grid-padding-x " data-equalizer data-equalize-by-row="true">
-    <div class="cell small-8" data-equalizer-watch>
-        <div class="media-object align-center">
-            <div class="media-object-section" >
-                <img class="perfil desk" src="img/ava3-3.jpg">
-            </div>
-            <div class="media-object-section main-section">
-                <div class="row offc">
-                    <div class="column centrar">
-                        <img class="perfil2" src="img/ava3-3.jpg">
-                    </div>
-                </div>
-                <div class="row offc">
-                    <div class="column centrar">
-                        <h3 >Welcome</h3>
-                    </div>
-                </div>
-
-                <div style="overflow:hidden">
-                    <dl>
-                        <dd class="letras">Hi, I'm Mauricio Rodríguez. I'm an engineer in computer science.</dd>
-                        <dd></dd>
-                        <dd class="letras2">I like to program and develop web applications, I have great interest and curiosity to learn new languages,
-                            frameworks and tools for work.</dd>
-                        <dd class="letras3">I’m exploring the framework of angularJS and .NET right now. The spring framework and the kotlin language of android are pending.</dd>
-                        <dd class="letras4">Lately working on window 10 operating system but sometimes I use linux</dd>
-
-                    </dl>
+                <div class="fondo2">
+                    <hr>
+                    <h4>About</h4>
+                    <hr>
+                    <hr>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+                    <div class="grid-padding-x " data-equalizer data-equalize-by-row="true">
+                        <div class="cell small-8" data-equalizer-watch>
+                            <div class="media-object align-center">
+                                <div class="media-object-section" >
+                                    <img class="perfil desk" src="img/ava3-3.jpg">
+                                </div>
+                                <div class="media-object-section main-section">
+                                    <div class="row offc">
+                                        <div class="column centrar">
+                                            <img class="perfil2" src="img/ava3-3.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="row offc">
+                                        <div class="column centrar">
+                                            <h3 >Welcome</h3>
+                                        </div>
+                                    </div>
+
+                                    <div style="overflow:hidden">
+                                        <dl>
+                                            <dd class="letras">Hi, I'm Mauricio Rodríguez. I'm an engineer in computer science.</dd>
+                                            <dd></dd>
+                                            <dd class="letras2">I like to program and develop web applications, I have great interest and curiosity to learn new languages,
+                                                frameworks and tools for work.</dd>
+                                            <dd class="letras3">I’m exploring the framework of angularJS and .NET right now. The spring framework and the kotlin language of android are pending.</dd>
+                                            <dd class="letras4">Lately working on window 10 operating system but sometimes I use linux</dd>
+
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
     </div>
 
        
@@ -159,7 +162,7 @@
                     <div class=" align-top text-center">
                         <div class="fondo2">
                             <hr>
-                            <h4>Experience and Education</h4>
+                            <h4 class="animated infinite zoomIn slower">Experience and Education</h4>
                             <hr>
                             <hr>
                         </div>
@@ -183,6 +186,22 @@
                                                     <span aria-hidden="true">&times;</span>
                                                   </button>
                                                 </div>
+
+                                                <div class="row">
+                                                    <div class="columns">
+                                                        <p><a data-open="exampleModal1">Click me for a modal</a></p>
+
+                                                        <div class="reveal" id="exampleModal1" data-reveal>
+                                                            <h1>Awesome. I Have It.</h1>
+                                                            <p class="lead">Your couch. It is mine.</p>
+                                                            <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+                                                            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                                 
                                                 <dt>Courses</dt>
                                                 <ul>
@@ -218,10 +237,18 @@
                                         <dt>University</dt>
                                         <p>Benemerita Universidad Autonoma de Puebla</p>
                                         <dt>Faculty of Computer Science</dt>
-                                        <p>Computer Science Engineering - <a data-toggle="ceneval">degree in process</a> </p>
-                                        <div class="dropdown-pane" data-position="top" data-alignment="center"  id="ceneval" data-dropdown>
-                                            <img style="width: 100%; height: 50%;" src="img/ceneval-2.jpg">
-                                        </div>
+                                        <p>Computer Science Engineering - <a data-open="ceneval-2">degree in process</a> </p>
+
+
+                                                <div class="reveal" id="ceneval-2" data-reveal>
+                                                    <img style="width: 100%; height: 50%;" src="img/ceneval-2.jpg">
+                                                    <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+
+
+
                                         <dt>Courses</dt>
                                         <ul>
                                             <li>Maintenance of the computers</li>
@@ -259,7 +286,7 @@
                     <div class=" align-top text-center">
     <div class="fondo2">
         <hr>
-        <h4>Programming Languages & Tools</h4>
+        <h4 class="animated infinite zoomIn slower">Programming Languages & Tools</h4>
         <hr>
         <hr>
     </div>
@@ -380,14 +407,14 @@
                     <div class=" align-top text-center">
     <div class="fondo2">
         <hr>
-        <h4>Contact</h4>
+        <h4 class="animated infinite zoomIn slower">Contact</h4>
         <hr>
         <hr>
     </div>
 </div>
 <div class="grid-x grid-padding-x">
     <div class="cell auto">
-        <div class="callout calltop">
+        <div class="callout">
             <table class=" hover">
                 <tbody>
                 <tr><td><i class="fas fa-user-tie fa-1x fa-pull-left"></i>Mauricio Arturo Rodríguez Rosas</td></tr>
@@ -407,34 +434,31 @@
                     </div>
                 </div>
             </section>
-            
-            
-                <a class="fix" data-toggle="cont"><i class="fas fa-plus-circle fa-3x"></i></a>
-                <div class="dropdown-pane" data-position="top" data-alignment="right" id="cont" data-dropdown>
-                    <div class="title-bar-title">Contact</div>
-                    <table class=" hover">
-                        <tbody>
-                        <tr>
-                            <td><i class="fas fa-user-tie fa-1x fa-pull-left"></i>Mauricio Arturo Rodríguez Rosas</td>
-                        </tr>
-                        <tr>
-                            <td><i class="fas fa-mobile-alt"></i>(+52)22-21-15-91-76</td>
-                        </tr>
-                        <tr>
-                            <td><i class="fas fa-at"></i>mauricio.a_rosas@hotmail.com </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <div>
-                <a href="https://www.facebook.com/crines.fear"><i class="fab fa-facebook fa-3x"></i></a>
-                <a href="https://github.com/crinesx"><i class="fab fa-github fa-3x"></i></a>
-                <a href="https://gitlab.com/crines"><i class="fab fa-gitlab fa-3x"></i></a>
-                <a href="https://www.linkedin.com/in/mauricio-rosas-b97033161/"><i class="fab fa-linkedin fa-3x"></i></a>
-            </div>
-                </div>
+
 
         </div>
 
+
+    <a class="fix hide-for-medium-only" data-toggle="cont"><i class="fas fa-plus-circle fa-3x"></i></a>
+    <div class="dropdown-pane" data-position="top" data-alignment="right" id="cont" data-dropdown>
+        <div class="title-bar-title">Contact</div>
+        <table class=" hover">
+            <tbody>
+            <tr>
+                <td><i class="fas fa-mobile-alt"></i>(+52)22-21-15-91-76</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-at"></i>mauricio.a_rosas@hotmail.com </td>
+            </tr>
+            </tbody>
+        </table>
+        <div>
+            <a href="https://www.facebook.com/crines.fear"><i class="fab fa-facebook fa-3x"></i></a>
+            <a href="https://github.com/crinesx"><i class="fab fa-github fa-3x"></i></a>
+            <a href="https://gitlab.com/crines"><i class="fab fa-gitlab fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/mauricio-rosas-b97033161/"><i class="fab fa-linkedin fa-3x"></i></a>
+        </div>
+    </div>
 
         </body>
         <!-- Scripts -->

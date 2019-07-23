@@ -1,9 +1,6 @@
-/*clase tool para seccion de lenguajes, clase tool2 para seccion de accordion*/
-@media screen and (max-width:640px){
-    
-}
 
-@media screen and (min-width : 641px) {
+
+@media screen and (min-width : 638px) {
     .logonav2{
         display: none;
     }

@@ -29,7 +29,7 @@ body{
 }
 
 .fix{
-    display:hidden;
+    display:scroll;
     position:fixed;
     bottom:20px;
     right:20px;
@@ -78,4 +78,8 @@ body{
 
 .logonav{
     display: none;
+}
+
+.navfix{
+    position: fixed;
 }
