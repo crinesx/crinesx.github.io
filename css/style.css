@@ -91,4 +91,8 @@ body{
 
 .modalover{
     overflow: scroll;
+    -webkit-overflow:scroll ;
+    -webkit-overflow-scrolling: auto;
+    -moz-overflow: scroll;
+    -o-overflow:scroll;
 }
